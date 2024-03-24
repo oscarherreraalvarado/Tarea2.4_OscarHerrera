@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral90"
+    tools:context=".ActivityCreacionFirma">
+
+    <com.example.tarea_24_oscarherrera.Dibujar
+        android:id="@+id/lienzo"
+        android:layout_width="335dp"
+        android:layout_height="226dp"
+        android:background="@color/material_dynamic_neutral80"
+        app:layout_constraintBottom_toTopOf="@+id/btnverlista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnregresar"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Regresar"
+        app:layout_constraintEnd_toStartOf="@+id/btnlimpiar"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnlimpiar"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:foregroundGravity="top|center"
+        android:text="Limpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/btnregresar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtinformacion"
+        android:layout_width="316dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lienzo" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinformacion"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <Button
+        android:id="@+id/btnverlista"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="228dp"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Ver Lista"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnguardar"
+        app:layout_constraintVertical_bias="0.632" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
